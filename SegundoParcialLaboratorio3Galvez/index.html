@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="spinner-container" id="spinner">
+        <div class="spinner"></div>
+    </div>
+
+
+        <form action="" id = "form_principal" class = "form">
+    
+            <!---<label for="tipo">Filtrar por</label>
+            <select id="tipo" name="tipo">
+                <option value="todos">Todos</option>
+                <option value="empleado">Empleado</option>
+                <option value="cliente">Cliente</option>
+            </select>---> 
+    
+            <br />
+    
+            <!---<label for="textoPromedio">Calcular edad promedio:</label>
+            <label id="texto_promedio"></label>
+            <button class="btn" id="btn_calcular_promedio" 
+            onclick="calcularEdadPromedio()">Calcular</button>--->
+    
+            <br />  
+    
+            <!---<label>Mostrar columnas</label>
+            <br />
+            <input type="checkbox" id="id_checkbox" class="checkbox" checked>ID</input>
+            <input type="checkbox" id="nombre_checkbox" class="checkbox" checked>Nombre</input>
+            <input type="checkbox" id="apellido_checkbox" class="checkbox" checked>Apellido</input>
+            <input type="checkbox" id="edad_checkbox" class="checkbox" checked>Edad</input>
+            <input type="checkbox" id="sueldo_checkbox" class="checkbox" checked>Sueldo</input>
+            <input type="checkbox" id="ventas_checkbox" class="checkbox" checked>Ventas</input>
+            <input type="checkbox" id="compras_checkbox" class="checkbox" checked>Compras</input>
+            <input type="checkbox" id="telefono_checkbox" class="checkbox" checked>Telefono</input>-->
+    
+    
+            <table border="1" id="tablaDatos">
+                <thead>
+                    <tr>
+                        <th id="id_t">ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Equipo</th>
+                        <th>Posicion</th>
+                        <th>Cant Goles</th>
+                        <th>Titulo</th>
+                        <th>Facultad</th>
+                        <th>Año Graduacion</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="tablaCuerpo">
+                </tbody>
+                
+    
+            </table>
+
+            <br>
+            <button class="btn" id="btn_agregar_elemento">Agregar Elemento</button>
+        <!-- <button class="btn" id="btn_editar">Editar</button> -->
+         <!-- <button class="btn" id="btn_eliminar">Eliminar</button> -->
+    
+        </form>
+    
+
+    <br />
+    <br />
+
+
+        <form action="" id = "form_agregar" class = "form" style="display: none;">
+
+            <h1>Formulario ABM</h1>
+    
+            <!--<label id="label_select_id_editar">Persona a editar:</label>
+            <select id = "select_id_editar"> -->
+
+            <legend id="encabezado_form_abm">
+
+                ****************Alta****************
+
+                
+            </legend>
+
+            </select>
+            <label for="tipo" id="tipo_persona_label">Tipo:</label>
+            <select id="tipo_agregar">
+                <option value="futbolista">Futbolista</option>
+                <option value="profesional">Profesional</option>
+            </select>
+
+            <div class="inputs_container"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+    
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
+    
+        
+        
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+    
+                
+                <label for="equipo_agregar" id="equipo_agregar_label">Equipo:</label>
+                <input type="text" id="equipo_agregar" name="equipo">
+    
+                
+                <label for="posicion_agregar" id="posicion_agregar_label">Posicion:</label>
+                <input type="text" id="posicion_agregar" name="posicion" >
+    
+                
+                <label for="goles_agregar" id="goles_agregar_label">Goles:</label>
+                <input type="number" id="goles_agregar" name="goles">
+    
+        
+        
+                <label for="titulo_agregar" id="titulo_agregar_label" style="display: none;">titulo:</label>
+                <input type="text" id="titulo_agregar" name="titulo" style="display: none;">
+
+                <label for="facultad_agregar" id="facultad_agregar_label" style="display: none;">facultad:</label>
+                <input type="text" id="facultad_agregar" name="facultad" style="display: none;">
+
+                <label for="añoGraduacion_agregar" id="añoGraduacion_agregar_label" style="display: none;">añoGraduacion:</label>
+                <input type="number" id="añoGraduacion_agregar" name="añoGraduacion" style="display: none;">
+    
+
+            </div>
+
+            
+            
+            <button class="btn" id="btn_aceptar">Aceptar</button>
+            <button class="btn" id="btn_cancelar">Cancelar</button>
+
+            
+            <button class="btn" id="btn_aceptar_cambio">Aceptar Cambio</button>
+            <button class="btn" id="btn_cancelar_cambio">Cancelar Cambio</button>
+
+
+            <button class="btn" id="btn_aceptar_eliminacion">Aceptar Eliminacion</button>
+            <button class="btn" id="btn_cancelar_eliminacion">Cancelar Eliminacion</button>
+
+    
+    
+    
+        </form>
+    
+
+    <br />
+    <br />
+    
+    <label id="mensaje_error"></label>
+
+    <script src="datos.js"></script>
+
+</body>
+</html>
